@@ -1,8 +1,8 @@
-import { View, Text, } from 'react-native'; 
+import { View, Text, } from 'react-native';
 import { Slot } from 'expo-router';
 import { useFonts } from 'expo-font';
 import { StatusBar } from 'expo-status-bar';
-import { globalStyles } from './styles/global-styles';
+import globalStyles from '../app/styles/global-styles';
 
 const RootLayout = () => {
 
@@ -18,10 +18,9 @@ const RootLayout = () => {
     <View style={globalStyles.background}>
       <Slot />
 
-      <StatusBar style ="light" />
-      
+      <StatusBar style="light" />
     </View>
   );
 };
 
-export default RootLayout;
+export default RootLayout; 
