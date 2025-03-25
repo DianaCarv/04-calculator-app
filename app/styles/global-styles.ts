@@ -12,7 +12,9 @@ const globalStyles = StyleSheet.create({
     calculatorCountainer: {
         flex: 1,
         justifyContent: 'flex-end',
-        paddingBottom: 20,
+        alignItems: 'center',
+        paddingHorizontal: 5,
+        paddingBottom: 5,
     },
 
     mainResult: {
@@ -38,19 +40,21 @@ const globalStyles = StyleSheet.create({
     },
 
     button: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
         height: 80,
-        width: 70,
+        width: 90,
         backgroundColor: Colors.orange,
         borderRadius: 100,
-        justifyContent: 'center',
-        marginHorizontal: 10,
+        marginHorizontal: 4,
     },
 
 
     buttonText: {
-        textAlign: 'center',
+       textAlign: 'center',
         padding: 10,
-        fontSize: 20,
+        fontSize: 22,
         color: Colors.textPrimary,
         fontWeight: '300',
         fontFamily: 'SpaceMono',
